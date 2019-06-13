@@ -32,7 +32,7 @@
       <td>User</td>
       {{/if}}
       <td>
-        <form action="/admin/users/{{this.id}}?_method=PUT" method="POST" style="display: inline;">
+        <form action="/admin/users/{{this.id}}" method="POST" style="display: inline;">
           {{#if this.isAdmin}}
           <button type="submit" class="btn btn-link">Set as User</button>
           {{else}}

@@ -63,7 +63,7 @@ module.exports = (app, passport) => {
 
   //edit user's admin
   app.get('/admin/users', authenticatedAdmin, adminController.editUser)
-  app.put("/admin//users/:id", authenticatedAdmin, adminController.putUser)
+  app.post('/admin/users/:id', authenticatedAdmin, adminController.putUser)
 
 
 
